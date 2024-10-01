@@ -30,10 +30,10 @@ const FormGroup = ({
 
   return (
     <div className={styles.formGroup}>
-      <label htmlFor={id ?? name} className={styles.label}>
+      <label htmlFor={name} className={styles.label}>
         {label}
       </label>
-      <Field id={id} name={name} type={type} className={styles.input} />
+      <Field id={name} name={name} type={type} className={styles.input} />
       <ErrorMessage name={name} component="span" className={styles.formError} />
     </div>
   );
